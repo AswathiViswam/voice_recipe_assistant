@@ -7,7 +7,7 @@ const App = () => {
   const [stepIndex, setStepIndex] = useState(0);
 
   const fetchRecipeSteps = async (query) => {
-    const apiKey = "b0eec2787469496799c0c8869d4c87a4"; // 🔑 Replace with your real key
+    const apiKey = "your_api_key"; // 🔑 Replace with your real key
     try {
       const searchURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${query}`;
       const searchRes = await axios.get(searchURL);
